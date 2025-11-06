@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container {
+    display: flex;
+    background-image: url(./static//images/abstract-head.png);
+    background-size: contain;
+    background-position: center center;
+    padding: 1rem;
+    height: 100vh;
+}
+
+.pics {
+    flex: 1 1 0;
+    min-width: 0;
+
+}
+
+.form {
+    flex: 2 1 0;
+    min-width: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
