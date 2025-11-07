@@ -1,16 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+
+@font-face {
+    font-family: Norse Bold;
+    src: url(.//static/fonts/Norse-Bold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: black;
+    font-family: "Norse Bold", sans-serif;
+    font-weight: 500;
+
 }
+
 
 .container {
     display: flex;
-    background-image: url(./static//images/abstract-head.png);
+    /* background-image: url(./static//images/abstract-head.png); */
     background-size: contain;
     background-position: center center;
     padding: 1rem;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -23,9 +35,66 @@
 .form {
     flex: 2 1 0;
     min-width: 0;
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: #F9FAFB;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+
+.form-title {
+    font-size: 1.3rem;
+    padding: 3rem 12rem 2rem 2rem;
+    line-height: 1.5rem;
+}
+
+.form-body {
+    background-color: white;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.form-control input {
+    width: 16rem;
+}
+
+.form-footer {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-footer button {
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #596D48;
+    border: none;
+    border-radius: 12px;
+    width: 10rem;
+}
+
+.footer {
+    padding-top: 2rem;
 }
